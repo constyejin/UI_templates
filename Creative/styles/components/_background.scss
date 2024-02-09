@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  width: 1080px;
+  margin: 60px auto 0 auto;
+  padding: 51px 66px;
+  border-radius: 50px;
+  background: $background;
+  overflow: hidden;
+
+  .ellipse {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    filter: blur(300px);
+  }
+
+  .pink {
+    top: -428px;
+    left: -345px;
+    background: rgba(255, 0, 184, .3);
+  }
+
+  .purple {
+    bottom: -423px;
+    right: -345px;
+    background: rgba(0, 56, 265, .3);
+  }
+}
