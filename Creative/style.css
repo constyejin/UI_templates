@@ -8,6 +8,5 @@ body {
   width: 1080px;
   height: 1080px;
   border-radius: 50px;
-  opacity: .8;
-  background: linear-gradient(#E1BCCE, #BECBF0);
+  background: linear-gradient(rgba(225, 188, 206, .5), rgba(190, 203, 240));
 }
