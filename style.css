@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  padding: 40px;
+}
+
+.img-box { 
+  text-align: center;
+
+  img {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+}
+
+
+
