@@ -3,4 +3,8 @@
 @import './base/nomalize';
 @import './base/reset';
 
-@import './components/background'
+@import './mixins/flexbox';
+
+@import './components/background';
+@import './components/gnb';
+
