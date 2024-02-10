@@ -102,5 +102,31 @@
       }
     }
   }
+
+  &-sell {
+    flex-basis: 370px;
+
+    &-item {
+      @include flexbox();
+      
+      &:last-child {
+        margin-top: 40px;
+      }
+
+      img {
+        align-self: start;
+        margin-right: 19px;
+      }
+
+      &-txt {
+        margin-top: 16px;
+      
+        p {
+          margin-top: 12px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
