@@ -1,0 +1,51 @@
+.service {
+  @include flexbox(between);
+  margin-top: 20px;
+
+  &-txt {
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      margin-top: 19px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    button {
+      position: relative;
+      z-index: 1;
+      width: 188px;
+      height: 60px;
+      margin-top: 32px;
+      font-weight: 700;
+      border-radius: 50px;
+      overflow: hidden;
+      color: $white;
+      background-color: $purple;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        background-color: white;
+        transition: all 400ms ease-in-out;
+      }
+
+      &:hover {
+        border: 2px solid $purple;
+        color: $purple;
+      }
+
+      &:hover::after {
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+}
