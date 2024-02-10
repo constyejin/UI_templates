@@ -1,5 +1,7 @@
 .service {
   @include flexbox(between);
+  position: relative;
+  height: 505px;
   margin-top: 20px;
 
   &-txt {
@@ -47,5 +49,27 @@
         z-index: -1;
       }
     }
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 524px;
+    height: 505px;
+    object-fit: contain;
+    animation: move 1.5s linear infinite;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-10px, 0);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(-10px, 0);
   }
 }
