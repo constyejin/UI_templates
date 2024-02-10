@@ -1,0 +1,106 @@
+.product {
+  @include flexbox(between);
+  margin-top: 80px;
+
+  &-txt {
+    align-self: start;
+    margin-top: 20px;
+
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+
+  &-icons {
+    @include flexbox();
+    flex-wrap: wrap;
+    flex-basis: 387px;
+    flex-shrink: 0;
+
+    &-item {
+      position: relative;
+      width: 150px;
+      height: 166px;
+      border-radius: 30px;
+      background-color: $box-color;
+      box-shadow: -12px -4px 20px 10px $box-shadow;
+
+      &:nth-child(odd) {
+        margin-right: 16px;
+      }
+
+      &:nth-child(even) {
+        margin-top: 16px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 70px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 30px;
+        backdrop-filter: blur(50px);
+      }
+
+      
+      &-blur {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 9px;
+        left: 4px;
+        border-radius: 30px;
+        background-color:$blur-box;
+        filter: blur(30px);
+      }
+    
+      img {
+        position: absolute;
+        width: 200px;
+        height: 184px;
+        object-fit: contain;
+      }
+
+      &:nth-child(1) {
+        img {
+          top: -22px;
+          left: -22px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          top: -30px;
+          left: -18px;
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          top: 0;
+          right: 26px;
+        }
+      }
+
+      &:nth-child(4) {
+        img {
+          top: 0;
+          right: -26px;
+        }
+      }
+    }
+  }
+}
+
