@@ -9,6 +9,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
 .wrapper {
   max-width: 1680px;
   display: flex;
@@ -48,11 +56,32 @@ a {
   transition: all 400ms ease-in-out;
 
   h1 {
-    padding: 30px;
+    padding: 30px 0 0 30px;
     color: #fff;
+  }
+
+  p {
+    color: #fff;
+    padding-left: 30px;
   }
 }
 
 .item-box:hover .item-box-title {
   transform: translateY(0);
+}
+
+.item-box-skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0 0 30px;
+  text-align: center;
+
+  li {
+    min-width: 86px;
+    margin: 8px 8px 0 0;
+    padding: 12px;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+  }
 }
