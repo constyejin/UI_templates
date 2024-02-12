@@ -1,7 +1,24 @@
 * {
+  font-family: "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  margin: 0;
 }
 
 a {
@@ -9,12 +26,8 @@ a {
   text-decoration: none;
 }
 
-li {
+ul, ol {
   list-style: none;
-}
-
-h1 {
-  margin: 0;
 }
 
 .gnb {
@@ -39,10 +52,6 @@ h1 {
 .gnb-list li a {
   padding: 0 12px;
   transition: all 300ms ease-in-out; 
-}
-
-.gnb-list li a i {
-  font-size: 24px; 
 }
 
 .gnb-list li a:hover {
@@ -115,5 +124,31 @@ h1 {
     color: #fff;
     border-radius: 30px;
     border: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width : 1000px) {
+  .item-box {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .gnb {
+    padding: 20px 40px;
+  }
+
+  .gnb-logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .gnb-list li a {
+    padding: 0 12px; 
+  }
+
+  .item-box {
+    width: 100%;
+    height: 300px;
   }
 }
