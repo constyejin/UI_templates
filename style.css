@@ -135,7 +135,7 @@ ul, ol {
 
 @media screen and (max-width : 768px) {
   .gnb {
-    padding: 20px 40px;
+    padding: 20px;
   }
 
   .gnb-logo img {
@@ -144,11 +144,20 @@ ul, ol {
   }
 
   .gnb-list li a {
-    padding: 0 12px; 
+    padding: 0 8px; 
+  }
+  
+  .project {
+    padding: 20px;
   }
 
   .item-box {
     width: 100%;
+    min-width: 320px;
     height: 300px;
+  }
+
+  .item-box:not(:first-child) {
+    margin-top: 22px;
   }
 }
