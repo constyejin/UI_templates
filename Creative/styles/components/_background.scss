@@ -31,4 +31,9 @@
     right: -345px;
     background: rgba(0, 56, 265, .3);
   }
+
+  @include responsive(M) {
+    padding: 16px 22px;
+  }
 }
+
