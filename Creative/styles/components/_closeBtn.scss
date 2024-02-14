@@ -1,0 +1,49 @@
+.sidebar {
+  &-close-btn {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 28px;
+    height: 36px;
+    color: transparent;
+    font-size: 6px;
+    letter-spacing: 1.2px;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 30px;
+      height: 4px;
+      transform-origin: center left;
+      transition: all 0.2s ease-in;
+      z-index: -1;
+      background-color: $light-purple;
+    }
+
+    &::before {
+      top: 4px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 26px;
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      color: $purple;
+      font-weight: 700;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      transform: rotate(0deg);
+    }
+  }
+}
