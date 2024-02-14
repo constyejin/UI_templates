@@ -1,6 +1,7 @@
 @import './constants/colors';
 @import './constants/breakpoint';
 @import './constants/globals';
+@import './constants/z-indexs';
 
 @import './base/nomalize';
 @import './base/reset';
@@ -14,6 +15,8 @@
 @import './components/product';
 @import './components/sidebar';
 @import './components/closeBtn';
+@import './components/overlay';
+
 
 
 
