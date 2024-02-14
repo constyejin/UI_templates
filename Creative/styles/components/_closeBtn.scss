@@ -23,7 +23,7 @@
       transform-origin: center left;
       transition: all 0.2s ease-in;
       z-index: -1;
-      background-color: $light-purple;
+    background-color: #b99cfc;
     }
 
     &::before {
@@ -37,7 +37,7 @@
     }
 
     &:hover {
-      color: $purple;
+      color: $white;
       font-weight: 700;
     }
 
