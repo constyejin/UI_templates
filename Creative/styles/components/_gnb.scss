@@ -82,6 +82,31 @@
       }
     }
   }
+
+  @include responsive(T) {
+    &-logo {
+      margin-right: 20px;
+
+      img{
+        width: 150px;
+        object-fit: contain;
+      }
+    }
+
+    &-menu {
+      flex-shrink: 0;
+      &-item {
+        a {
+          padding: 12px;
+        }
+      }
+    }
+  }
+
+  @include responsive(M) {
+    border: 2px solid blue;
+  }
 }
 
-  
+
+
