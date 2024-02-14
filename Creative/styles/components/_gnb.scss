@@ -104,7 +104,23 @@
   }
 
   @include responsive(M) {
-    border: 2px solid blue;
+    // border: 1px solid red;
+
+    &-login {
+     flex-grow: 0;
+    
+      &-list {
+        width: 150px;
+      }
+
+      &-item {
+        button {
+          width: 90px;
+          height: 40px;
+          border-radius: 20px;
+        }
+      }
+    }
   }
 }
 
