@@ -11,6 +11,10 @@
     background-color: rgba(0,0,0, 0.85);
     transition: transform 300ms ease-in-out;
 
+    &.is-active {
+      top: 0;
+    }
+    
     &-icon {
       font-size: 22px;
     }
