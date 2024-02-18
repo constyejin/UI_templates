@@ -9,7 +9,7 @@
     padding: 20px;
     text-align: center;
     background-color: rgba(0,0,0, 0.85);
-    transition: transform 300ms ease-in-out;
+    transition: top 300ms ease-in-out;
 
     &.is-active {
       top: 0;
