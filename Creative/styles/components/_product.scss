@@ -128,5 +128,17 @@
       }
     }
   }
+
+  @include responsive(M) {
+    @include column-flexbox();
+    margin-top: 0;
+
+    &-txt {
+      p {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
