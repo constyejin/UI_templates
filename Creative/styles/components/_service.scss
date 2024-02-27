@@ -60,28 +60,6 @@
     object-fit: contain;
     animation: move 1.5s linear infinite;
   }
-
-  @include responsive(M) {
-    margin-top: 0;
-    
-    &-txt {
-      h2 {
-        font-size: 40px;
-      }
-
-      p {
-        margin-top: 32px;
-        font-size: 16px;
-        font-weight: 500;
-      }
-
-      button {
-        width: 166px;
-        height: 52px;
-        margin-top: 32px;
-      }
-    }
-  }
 }
 
 @keyframes move {
