@@ -129,8 +129,8 @@
     }
   }
 
-  @include responsive(M) {
-    @include column-flexbox();
+  @include responsive(T) {
+    // @include column-flexbox();
     margin-top: 0;
 
     &-txt {

@@ -61,7 +61,7 @@
     animation: move 1.5s linear infinite;
   }
 
-  @include responsive(M) {
+  @include responsive(T) {
     margin-top: 0;
     
     &-txt {
