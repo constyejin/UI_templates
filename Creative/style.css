@@ -9,7 +9,7 @@
   white-space: nowrap !important;
   border: 0 !important; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 468px) {
   .sm-only {
     display: none !important; } }
 
@@ -17,7 +17,7 @@
   .md-only {
     display: none !important; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .sm-hidden {
     display: none !important; } }
 
@@ -408,7 +408,7 @@ address {
     bottom: -423px;
     right: -345px;
     background: rgba(0, 56, 255, 0.3); }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 468px) {
     .wrapper {
       padding: 26px 30px; } }
 
@@ -481,7 +481,7 @@ address {
       flex-shrink: 0; }
       .gnb-menu-item a {
         padding: 12px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 468px) {
     .gnb-login {
       flex-grow: 0; }
       .gnb-login-list {
@@ -539,6 +539,18 @@ address {
     height: 505px;
     object-fit: contain;
     animation: move 1.5s linear infinite; }
+  @media screen and (max-width: 1200px) {
+    .service {
+      margin-top: 0; }
+      .service-txt h2 {
+        font-size: 40px; }
+      .service-txt p {
+        margin-top: 32px;
+        font-size: 16px;
+        font-weight: 500; }
+      .service-txt button {
+        width: 166px;
+        height: 52px; } }
 
 @keyframes move {
   0% {
@@ -633,8 +645,32 @@ address {
         .product-sell-item-txt p {
           margin-top: 12px;
           font-size: 18px; }
+  @media screen and (max-width: 1200px) {
+    .product {
+      margin-top: 0; }
+      .product-txt p {
+        font-size: 16px;
+        font-weight: 500; }
+      .product-icons {
+        margin-top: 60px; }
+        .product-icons-item {
+          width: 140px;
+          height: 146px; }
+          .product-icons-item:nth-child(odd) {
+            margin-right: 16px; }
+          .product-icons-item:nth-child(3) {
+            margin-left: 20px; }
+          .product-icons-item img {
+            width: 180px;
+            height: 164px; }
+          .product-icons-item:nth-child(3) img {
+            top: 0;
+            right: 6px; }
+          .product-icons-item:nth-child(4) img {
+            top: 0;
+            right: -26px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   .sidebar {
     position: absolute;
     top: -300px;
